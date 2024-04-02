@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,500&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="media_query.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="options">
+          <div class="nav-links">
+            <p>Home</p>
+          </div>
+          <div class="nav-links">
+            <p>About us</p>
+          </div>
+          <div class="nav-links">
+            <p>Contact</p>
+          </div>
+        </div>
+        <div class="button-container">
+          <button class="signup">
+            Signup
+          </button>
+        </div>
+      </div>
+      <i class="fa-solid fa-bars" id="dot"></i>
+    </header>
+
+    <div class="main-container">
+      <div class="card-container">
+        <div class="register">
+          <h1>Register</h1>
+          <small>Create an account to start using our service</small>
+          <form action="" id="register-form">
+            <div class="input-container">
+              <i class="fa-regular fa-user"></i>
+              <input
+                id="username"
+                name="username"
+                required="true"
+                placeholder="Create Username"
+                type="text"
+              />
+            </div>
+            <div class="input-container">
+              <i class="fa-regular fa-envelope"></i>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required="true"
+                placeholder="Enter Your Email"
+              />
+            </div>
+            <div class="input-container">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                required="true"
+                minlength="8"
+                maxlength="16"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                placeholder="Create Password"
+              />
+
+              <i class="fa-regular fa-eye eye"></i>
+            </div>
+            <div class="message-box">
+              <p id="lower" class="invalid">A Lowercase</p>
+              <p id="upper" class="invalid">A Uppercase</p>
+              <p id="number" class="invalid">A Number</p>
+              <p id="length" class="invalid">Minimum 8 Character</p>
+            </div>
+
+            <div class="input-container">
+              <i class="fa-solid fa-lock"></i>
+              <input
+                type="password"
+                name="cpassword"
+                id="cpassword"
+                required="true"
+                placeholder="Confirm Password"
+              />
+            </div>
+            <div class="message-box" id="password-msg-box">
+              <p id="wrong-password" class="invalid">Password doesn't match</p>
+            </div>
+            <button class="register-btn" type="submit">Register</button>
+            <small>Already have an account ? <a href="#">login</a></small>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(255, 105, 180, 0.588);
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Ubuntu";
+}
+
+.header-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  color: white;
+  padding: 25px 10px 5px 30px;
+  margin-right: 55px;
+  margin-top: 3px;
+}
+.header-container.active {
+  display: flex;
+  margin-right: 0;
+  width: 100vw;
+  margin-top: 0;
+}
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 5px;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  padding: 0px 10px 0px 10px;
+  align-items: center;
+  gap: 15px;
+  width: 150px;
+  font-family: "Ubuntu";
+  font-weight: 700;
+}
+.nav-links {
+  transition: 0.2s ease-in-out;
+}
+.nav-links:hover {
+  cursor: pointer;
+  color: #6d44b8;
+}
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 70px;
+  border-radius: 5px;
+  background-color: rgba(128, 128, 128, 0.858);
+  color: white;
+  padding: 0 5px 0 5px;
+  transition: 0.2s ease-in-out;
+}
+
+.signup:hover {
+  background-color: rgb(128, 128, 128);
+  color: beige;
+  cursor: pointer;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height:calc(100vh-62px);
+  width: 100vw;
+  margin: 0px auto;
+  overflow: hidden;
+  padding: 45px;
+}
+#dot {
+  left: 89%;
+  top: 15px;
+  display: none;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 5px 20px 50px #000;
+}
+
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  width: 400px;
+  height: 500px;
+  padding: 7px;
+  padding-top: 5%;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+i {
+  position: absolute;
+  left: 7px;
+}
+.eye {
+  left: 90%;
+  cursor: pointer;
+}
+input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Ubuntu";
+  background: #e0dede;
+  color: black;
+  margin: 10px auto;
+  padding: 20px 20px 20px 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 20px;
+}
+#register-form {
+  overflow: hidden;
+  width: 90%;
+}
+.message-box {
+  display: block;
+  gap: 5px;
+  flex-wrap: wrap;
+  display: none;
+}
+.message-box > p {
+  font-size: 0.7rem;
+}
+
+.valid {
+  color: green;
+}
+.invalid {
+  color: red;
+}
+.valid::before {
+  content: "✔";
+}
+.invalid::before {
+  content: "❌";
+}
+
+small {
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+  color: white;
+  font-weight: 100;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+button {
+  display: block;
+  justify-content: center;
+  margin: 10px auto;
+  width: 100%;
+  height: 40px;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(128, 128, 128, 0.858);
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+button:hover {
+  background: rgb(128, 128, 128);
+}
