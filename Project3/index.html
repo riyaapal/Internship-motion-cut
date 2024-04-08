@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="media_query.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container header-container flex">
+      <div class="logo-box">
+        <h3>TeddyHub</h3>
+      </div>
+
+      <ul>
+        <li class="navlinks">Sofas</li>
+        <li class="navlinks">Beds</li>
+        <li class="navlinks">Kitchen</li>
+      </ul>
+      <div class="search-bar">
+        <i id="magnifying" class="fa-solid fa-magnifying-glass"></i>
+        <input id="search-bar" type="text" placeholder="Search...">
+      </div>
+      <div class="utility">
+        <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-regular fa-user"></i>
+        <i class="fa-regular fa-heart"></i>
+        <div class="bag">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span id="cart-count" class="cart-count">0</span>
+        </div>
+
+      </div>
+      <div class="cart-menu">
+        <div class="cart-container">
+
+        </div>
+        <div class="btn-container">
+          <strong id="total">Total: &#8377 0</strong>
+          <button id="cart-btn-buy">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container main-container flex">
+    <div class="product-container">
+      <div class="left-side">
+
+
+        <div class="image-container">
+          <div class="cover-image">
+
+            <img id="cover-img" src="./assets/000.webp" alt="product" />
+
+
+          </div>
+          <div class="tumbnail">
+            <div class="box active">
+              <img src="./assets/000.webp" alt="image1" />
+            </div>
+            <div class="box ">
+              <img src="./assets/2.webp" alt="image2" />
+            </div>
+            <div class="box">
+              <img src="./assets/3.webp" alt="image3" />
+            </div>
+            <div class="box">
+              <img src="./assets/4.webp" alt="image4" />
+            </div>
+          </div>
+
+        </div>
+        <div class="recently-viewed">
+          <div class="text">
+            Recently Viewed
+          </div>
+          <div class="recent-container">
+
+
+            <div id="arrow1" class="arrow left-arrow">
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="item item1">
+              <img src="./assets/tedd2.jpg" alt="">
+              <div class="details">
+                <small>white-teddy</small>
+                <strong>&#8377 350</strong>
+
+              </div>
+
+            </div>
+            <div class="item item2">
+              <img src="./assets/teddy7.jpg" alt="">
+              <div class="details">
+                <small>yellow teddy</small>
+                <strong>&#8377 290</strong>
+
+              </div>
+            </div>
+            <div class="item item3">
+              <img src="./assets/teddy3.jpg" alt="">
+              <div class="details">
+                <small>bubblegum </small>
+                <strong>&#8377 500</strong>
+
+              </div>
+            </div>
+            <div class="item item4">
+              <img src="./assets/teddy5.jpg" alt="">
+              <div class="details">
+                <small>skyblue teddy</small>
+                <strong>&#8377 300</strong>
+
+              </div>
+            </div>
+            <div class="item item5">
+              <img src="./assets/teddy4.jpg" alt="">
+              <div class="details">
+                <small>Cersie teddy</small>
+                <strong>&#8377 320</strong>
+
+              </div>
+            </div>
+            <div id="arrow2" class="arrow right-arrow">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-desc">
+          <h1 id="product-name">Cinnamon Teddy</h1>
+          <i id="heart" class="fa-regular fa-heart"></i>
+        </div>
+
+        <div class="price">
+          <h1 id="product-price">&#8377 800</h1>
+          <div class="star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+
+          </div>
+
+        </div>
+        <div class="description">
+          <ul>
+            <li class="menu active">Overview</li>
+            <li class="menu">Specification</li>
+            <li class="menu">Reviews</li>
+            <li class="menu">Questions</li>
+          </ul>
+        </div>
+        <div class="overview">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            Maiores provident porro laborum magni alias enim odio non unde. Iste porro blanditiis dolor, esse aliquid
+            totam nam facilis pariatur ut doloribus recusandae architecto maxime laborum!
+            Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.
+
+          </p>
+        </div>
+        <div class="tools">
+          <div class="item-count">
+            <div class="count minus">
+
+              <i class="fa-solid fa-minus"></i>
+            </div>
+            <input id="count" type="tel" value="1">
+            <div class="count plus">
+              <i class="fa-solid fa-plus"></i>
+
+            </div>
+          </div>
+          <div class="pin-code">
+            <form id="pin-code" action="">
+              <input id="pin-input" type="text" minlength="6" maxlength="6" placeholder="Enter Pincode">
+              <button id="pin-btn">GO</button>
+            </form>
+
+          </div>
+
+        </div>
+        <div class="varient">
+
+          <div class="size-chart">
+            <span>Size</span>
+            <div class="size-box">
+              <div class="size size1 active">2</div>
+              <div class="size size2">3</div>
+              <div class="size size3">4</div>
+              <div class="size size4">5</div>
+            </div>
+
+          </div>
+          <div class="color-container">
+            <span>Colour</span>
+            <div class="colors">
+              <div class="color box1 active"></div>
+              <div class="color box2 "></div>
+              <div class="color box3"></div>
+              <div class="color box4"></div>
+              <div class="color box5"></div>
+            </div>
+
+          </div>
+        </div>
+        <div class="button-container">
+
+          <button id="buy">Buy Now</button>
+          <button id="cart-button">Add to cart</button>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
