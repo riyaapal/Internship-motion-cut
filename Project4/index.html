@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media_query.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="left-side">
+        <h2>Todo</h2>
+      </div>
+      <div class="right-side">
+        <i id="theme-toggle" class="fa-regular fa-moon" ></i>
+        <i class="fa-regular fa-user"></i>
+      </div>
+    </header>
+    <div class="container">
+      <div class="input-container">
+        <input id="add-value"  name="todo" type="text" placeholder="Add todo" />
+        <i onclick="AddTodo()" id="add-btn" class="fa-solid fa-calendar-plus"></i>
+      </div>
+      <div class="todo-container">
+        <div class="status">
+          <h3 id="all" class="active">ALL</h3>
+          <h3 id="incomplete" >Incomplete</h3>
+          <h3 id="complete" >Completed</h3>
+        </div>
+        <div class="todo-box">
+          
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
